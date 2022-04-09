@@ -56,9 +56,8 @@ const Payment = () => {
             amount={handleSumTotal()}
             onPaymentStart={ () => console.log('StartPayment')}
             onSuccess={data => handlePaymentSuccess(data)}
-            onApprove={data => handlePaymentSuccess(data)}
-            onPaymentError={error => console.log(error)}
-            onPaymentCancel= {data => console.log(data)}
+            onError={error => console.log(error)}
+            onCancel= {data => console.log(data)}
           />
         </div>
       </div>
